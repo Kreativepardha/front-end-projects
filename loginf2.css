@@ -1,0 +1,97 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Handjet', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    background-color: aqua;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+background-color: azure;
+width: 400px;
+max-width: 100%;
+overflow: hidden;
+border-radius: 5px;
+box-shadow: 10px 20px 2px rgba(0, 0, 0, 0.653);
+}
+.heading{
+    padding: 20px 40px;
+    background-color: rgba(96, 104, 104, 0.588);
+    border-bottom: 2px solid rgba(24, 24, 24, 0.696);
+    text-shadow: 2px 2px 0 rgb(236, 230, 230);
+}
+.heading h2{
+    margin: 0;
+}
+.form{
+    padding:30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size:14px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.form-control i{
+    position:absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    visibility: hidden;
+}
+.form button{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    background:linear-gradient(135deg,rgb(149, 150, 151),rgb(193, 211, 211));
+    border: 2px solid aliceblue;
+}
+button:hover{
+    /* background:linear-gradient(135deg,rgb(102, 108, 113),rgb(144, 153, 153)); */
+    background:linear-gradient(135deg,rgb(193, 211, 211),rgb(149, 150, 151));
+
+   
+}
+input:hover{
+    background:linear-gradient(135deg,rgb(137, 152, 166),rgb(156, 182, 182));
+
+}
+.form-control.success input{
+border-color: greenyellow;
+}
+.form-control.error input
+{
+    border-color: brown;
+}
+.form-control.success i.fa-solid fa-circle-check{
+    visibility: visible;
+
+}
+.form-control.error fa-solid fa-circle-exclamation{
+    visibility: hidden;
+}
