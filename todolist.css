@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+    font-family: 'Rocher';
+    /* font-family: 'Bungee Shade', cursive; */
+    
+     /* font-family: "Montserrat", "Arial", sans-serif; */
+}
+
+body{
+   
+    /* background: linear-gradient(to right, #d53369, #cbad6d); */
+    /* background: linear-gradient(to right, #283048, #859398);
+     */
+     background: linear-gradient(to right, #fa7f7f, #f263fc);
+}
+.container{
+    height: 100vh;
+    width:350px;
+    /* background-color: aquamarine; */
+    margin:100px 500px;
+}
+.todo{
+    max-width:350px;
+    height:300px;
+    background: linear-gradient(120deg, #68f3cc, rgb(127, 255, 178));
+    border-radius: 8px;
+   /* filter: blur(2px); */
+   border-style: outset;
+   border-width: 3px;
+   
+
+}
+h3{
+    position: relative;
+    top:20px;
+    font-size: 30px;
+    color: rgb(52, 47, 44);
+   text-shadow: 2px 2px beige;
+    text-transform: capitalize;
+    left:90px;
+    font-weight:900;
+    /* border-bottom: 2px solid grey; */
+    max-width:100%;
+    display: flex;
+
+}
+img{
+    height: 2rem;
+    margin: 2px 8px;
+    padding: 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    margin:35px 20px 10px 10px;
+    width:70%;
+    border-radius: 8px;
+    padding: 3px 9px;
+    font-size: small;
+    border-color: bisque;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+}
+button{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    margin:-12px;
+  padding:2px 4px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  background-color: #f38965;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding:1px 8px 1px 35px;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height:26px;
+    width:23px;
+    border-radius: 50%;
+    background-image: url(radio-button.png);
+    background-size: cover;
+    size:20px;  
+    background-position: center;
+    margin: 2px -25px;
+    
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(check-mark.png);
+}
+ul li span{
+    position: relative;
+    left:50px;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    /* line-height: 40px; */
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ul li span:hover{
+    background: #edeef0;
+}
