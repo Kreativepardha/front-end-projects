@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <link rel="stylesheet" href="musicp.css">
+    <script src="https://kit.fontawesome.com/d99d79bdaf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Noto+Sans+TC:wght@100&family=Oswald&family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+  <div class="container">
+    <div id="card" class="musicplayer">
+       
+     <div class="navi">
+      
+        <div class="controls">
+            <i class="fa-solid fa-ellipsis-vertical" style="color:  #f3166f;"></i>
+        </div>
+        <h2 id="person"></h2>
+        <div class="controls"><i class="fa-solid fa-less-than" style="color: #f3166f;"></i></div>
+
+    </div>
+
+        <img src="" alt="" id="album-img" class="imge">
+        <h1 id="songtitle"></h1>
+        <p id="artist"></p>
+      
+         <audio  id="audio">
+            <source src="" type="audio/mpeg">
+         </audio>
+         <input type="range" value="0" id="progress">
+
+        <nav>
+
+            <div class="circle">
+            <i class="fa-solid fa-backward-step" id="prev" style="color: #f3166f;"></i>
+        </div>
+        <div class="circle" id="play">
+            <i  class="fa-solid fa-play  style=color:#fff;" id="play-icon"></i>
+          
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-backward-step fa-rotate-180" id="next"  style="color: #f3166f;"></i>
+        </div>
+
+        </nav>
+        
+    </div>
+  </div>  
+
+
+
+
+
+    <script src="musicp.js"></script>
+</body>
+</html>
